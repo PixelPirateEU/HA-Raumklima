@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+
+  <group name="Connection">
+    <entry name="haUrl" type="String">
+      <label>Home Assistant Server URL</label>
+      <default>http://homeassistant.local:8123</default>
+    </entry>
+    <entry name="haToken" type="String">
+      <label>Long-Lived Access Token für Home Assistant</label>
+      <default></default>
+    </entry>
+    <entry name="refreshInterval" type="Int">
+      <label>Aktualisierungsintervall in Sekunden</label>
+      <default>30</default>
+    </entry>
+    <entry name="roomsJson" type="String">
+      <label>JSON-Liste der konfigurierten Räume und Sensoren</label>
+      <default>[{"name":"Wohnzimmer","icon":"sofa.svg","tempEntity":"sensor.wohnzimmer_temperatur","humidityEntity":"sensor.wohnzimmer_luftfeuchtigkeit"},{"name":"Schlafzimmer","icon":"bed.svg","tempEntity":"sensor.schlafzimmer_temperatur","humidityEntity":"sensor.schlafzimmer_luftfeuchtigkeit"},{"name":"Büro","icon":"laptop.svg","tempEntity":"sensor.buero_temperatur","humidityEntity":"sensor.buero_luftfeuchtigkeit"},{"name":"Badezimmer","icon":"paper-roll.svg","tempEntity":"sensor.badezimmer_temperatur","humidityEntity":"sensor.badezimmer_luftfeuchtigkeit"}]</default>
+    </entry>
+    <entry name="demoMode" type="Bool">
+      <label>Simulierte Demo-Werte anzeigen, wenn keine Verbindung konfiguriert ist</label>
+      <default>false</default>
+    </entry>
+  </group>
+
+  <group name="Theme">
+    <entry name="useCustomTheme" type="Bool">
+      <label>Benutzerdefiniertes Theme statt Linux-Desktop-Theme verwenden</label>
+      <default>false</default>
+    </entry>
+    <entry name="themePreset" type="String">
+      <label>Ausgewähltes Theme-Preset</label>
+      <default>custom</default>
+    </entry>
+    <entry name="bgColor" type="String">
+      <label>Hintergrundfarbe des Widgets</label>
+      <default>#1e1e2e</default>
+    </entry>
+    <entry name="bgOpacity" type="Int">
+      <label>Deckkraft des Widget-Hintergrunds (0-100)</label>
+      <default>92</default>
+    </entry>
+    <entry name="cardBgColor" type="String">
+      <label>Hintergrundfarbe der Raum-Karten</label>
+      <default>#313244</default>
+    </entry>
+    <entry name="cardOpacity" type="Int">
+      <label>Deckkraft der Raum-Karten (0-100)</label>
+      <default>90</default>
+    </entry>
+    <entry name="cardBorderColor" type="String">
+      <label>Rahmenfarbe der Raum-Karten</label>
+      <default>#45475a</default>
+    </entry>
+    <entry name="cardBorderWidth" type="Int">
+      <label>Rahmenbreite der Raum-Karten in Pixeln</label>
+      <default>1</default>
+    </entry>
+    <entry name="cardCornerRadius" type="Int">
+      <label>Eckenradius der Raum-Karten in Pixeln</label>
+      <default>12</default>
+    </entry>
+    <entry name="textColor" type="String">
+      <label>Primäre Textfarbe</label>
+      <default>#cdd6f4</default>
+    </entry>
+    <entry name="secondaryTextColor" type="String">
+      <label>Sekundäre Textfarbe</label>
+      <default>#a6adc8</default>
+    </entry>
+    <entry name="tempAccentColor" type="String">
+      <label>Akzentfarbe für Temperatur</label>
+      <default>#fab387</default>
+    </entry>
+    <entry name="humidityAccentColor" type="String">
+      <label>Akzentfarbe für Luftfeuchtigkeit</label>
+      <default>#89b4fa</default>
+    </entry>
+    <entry name="savedCustomThemesJson" type="String">
+      <label>Gespeicherte benutzerdefinierte Themes als JSON</label>
+      <default>[]</default>
+    </entry>
+  </group>
+
+  <group name="Display">
+    <entry name="widgetTitle" type="String">
+      <label>Titel in der Kopfzeile des Widgets</label>
+      <default>Raumklima</default>
+    </entry>
+    <entry name="columns" type="Int">
+      <label>Anzahl der Spalten im Grid-Layout</label>
+      <default>2</default>
+    </entry>
+    <entry name="compactRoomIndex" type="Int">
+      <label>Index des Raums für die Kompaktansicht in der Kontrollleiste</label>
+      <default>0</default>
+    </entry>
+    <entry name="showAverageInCompact" type="Bool">
+      <label>Durchschnitt aller Räume in der Kompaktansicht anzeigen</label>
+      <default>false</default>
+    </entry>
+    <entry name="showHumidityInCompact" type="Bool">
+      <label>Luftfeuchtigkeit in der Kompaktansicht anzeigen</label>
+      <default>true</default>
+    </entry>
+    <entry name="showHumidityBar" type="Bool">
+      <label>Fortschrittsbalken für Luftfeuchtigkeit auf den Karten anzeigen</label>
+      <default>true</default>
+    </entry>
+    <entry name="showComfortBadge" type="Bool">
+      <label>Komfort-Status-Indikator auf den Karten anzeigen</label>
+      <default>true</default>
+    </entry>
+    <entry name="showLastUpdated" type="Bool">
+      <label>Zeitpunkt der letzten Aktualisierung anzeigen</label>
+      <default>true</default>
+    </entry>
+    <entry name="enableThresholdColors" type="Bool">
+      <label>Farbliche Warnung bei Über-/Unterschreitung von Schwellenwerten</label>
+      <default>true</default>
+    </entry>
+    <entry name="warningTempLow" type="Double">
+      <label>Unterer Temperatur-Schwellenwert (°C)</label>
+      <default>18.0</default>
+    </entry>
+    <entry name="warningTempHigh" type="Double">
+      <label>Oberer Temperatur-Schwellenwert (°C)</label>
+      <default>25.0</default>
+    </entry>
+    <entry name="warningHumidityLow" type="Double">
+      <label>Unterer Luftfeuchtigkeits-Schwellenwert (%)</label>
+      <default>35.0</default>
+    </entry>
+    <entry name="warningHumidityHigh" type="Double">
+      <label>Oberer Luftfeuchtigkeits-Schwellenwert (%)</label>
+      <default>60.0</default>
+    </entry>
+  </group>
+</kcfg>

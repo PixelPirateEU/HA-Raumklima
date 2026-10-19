@@ -1,0 +1,25 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "dev@example.com",
+                "Name": "HomeAssistant Plasma Team"
+            }
+        ],
+        "Category": "Environment and Weather",
+        "Description": "Modernes KDE Plasma Widget zur Anzeige von Raumtemperaturen und Luftfeuchtigkeit über Home Assistant",
+        "Description[de]": "Modernes KDE Plasma Widget zur Anzeige von Raumtemperaturen und Luftfeuchtigkeit über Home Assistant",
+        "Description[en]": "Modern KDE Plasma Widget displaying room temperatures and humidity from Home Assistant",
+        "EnabledByDefault": true,
+        "Icon": "weather-Snow-scattered-day",
+        "Id": "org.kde.plasma.ha.roomclimate",
+        "License": "GPL-3.0-or-later",
+        "Name": "Home Assistant Raumklima",
+        "Name[de]": "Home Assistant Raumklima",
+        "Name[en]": "Home Assistant Room Climate",
+        "Version": "1.0.0",
+        "Website": "https://www.home-assistant.io"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
