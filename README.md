@@ -2,6 +2,17 @@
 
 Ein modernes **KDE Plasma 6 Widget (Plasmoid)** zur übersichtlichen Anzeige von **Raumtemperaturen** und **Luftfeuchtigkeit** deiner Räume über die **Home Assistant REST-API**.
 
+## 📸 Vorschau
+
+### Desktop-Ansicht (Breites Dashboard)
+![Desktop-Ansicht 1](Screenshot_Desktop1.png)
+
+### Desktop-Ansicht (Transparentes Custom-Theme)
+![Desktop-Ansicht 2](Screenshot_Desktop2.png)
+
+### Kontrollleiste / Taskleiste (Kompaktansicht & Popup)
+![Kontrollleiste & Popup](Screenshot_Kontrollleiste.png)
+
 ---
 
 ## ✨ Funktionen
